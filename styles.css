@@ -1,0 +1,199 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.siteheader {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    font-family: Arial;
+    background-color: rgb(255, 159, 50);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 159, 50);
+    padding: 50px 0;
+    align-items: center;
+}
+
+.footer a {
+    color: white;
+    font-family: Arial;
+}
+
+.footer,
+.push {
+    height: 50px;
+}
+
+.lookup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+    color: rgb(43, 63, 66);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+#cryptoInput {
+    border: 1px solid rgb(43, 63, 66);
+    border-radius: 4px;
+}
+
+#cryptoSubmit {
+    background-color: rgb(255, 159, 50);
+    border: 0;
+    width: 70px;
+    border-radius: 4px;
+    color: white;
+    margin: auto;
+}
+
+.maininfo {
+    font-family: Arial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    border-radius: 6px;
+    color: rgb(43, 63, 66);
+}
+
+#cryptoPrice {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coinprice {
+    display: flex;
+}
+
+#cryptoPrice img {
+    width: 30px;
+    height: 30px;
+    padding-top: 18px;
+}
+
+.sparkline {
+    display: block;
+    text-align: center;
+}
+
+#cryptoLink {
+    font-family: Arial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    border-radius: 6px;
+    color: rgb(43, 63, 66);
+}
+
+.description {
+    margin: 0 10px 5px 10px;
+    padding-top: 10px;
+}
+
+.weblink {
+    padding: 0 0 30px 30px;
+    margin-bottom: 30px;
+}
+
+.coinname {
+    padding-left: 5px;
+}
+
+/* Tablets */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .page {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lookup {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .search {
+        flex-direction: row;
+        width: 55%;
+    }
+
+    label {
+        width: 40%;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width: 961px) {
+    .page {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lookup {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .search {
+        flex-direction: row;
+        width: 30%;
+        justify-content: right;
+    }
+
+    label {
+        width: 40%;
+    }
+
+    .notspacer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #cryptoPrice {
+        flex-direction: column;
+        width: 30%;
+        justify-content: left;
+        /* align-items: center; */
+    }
+
+    #cryptoGraph {
+        width: 70%;
+    }
+
+    .coinname {
+        font-size: 230%;
+    }
+
+    .currentprice {
+        font-size: 230%;
+    }
+
+    #cryptoPrice img {
+        width: 60px;
+        height: 60px;
+        padding-top: 22px;
+    }
+
+    .maininfo {
+        padding-left: 30px;
+    }
+}
